@@ -8,6 +8,42 @@ namespace Encapsulaption
 {
     public class Product
     {
-        public double Price;
+        private double price;
+
+        public void SetPrice(double value)
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException();
+            }
+
+            price = value;
+        }
+
+        public double GetPrice()
+        {
+            return price;
+        }
+
+        private string name;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Description { get; set; }
+
+        public bool IsActive { get; private set; }
+
+        public void ChangeStock(int newStock)
+        {
+            if (newStock < 5)
+            {
+                IsActive = false;
+            }
+        }
+
     }
 }
