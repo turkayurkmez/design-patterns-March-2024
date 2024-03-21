@@ -8,7 +8,8 @@ namespace Bridge
 {
     public class Report
     {
-        //is a/has a
+        //is a/has a relations:
+        // olmaklık/sahiplik ilişkisi
         public ReportFormat Format { get; set; }
     }
 
