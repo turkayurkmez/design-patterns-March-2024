@@ -32,7 +32,7 @@ namespace Proxy
 
         public double Add(double x, double y)
         {
-            //1. Cache'e arma
+            //1. Cache'e atma
             //2. Log tutma
             //3. Denetleme:
 
